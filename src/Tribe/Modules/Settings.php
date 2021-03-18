@@ -1,6 +1,6 @@
 <?php
 
-namespace Tribe\Extensions\__TRIBE_NAMESPACE__;
+namespace Tribe\Extensions\Soderlind\Notifications;
 
 use Tribe__Settings_Manager;
 
@@ -224,8 +224,8 @@ class Settings {
 			// TODO: Settings heading end.
 			'a_setting' => [ // TODO
 				'type'            => 'text',
-				'label'           => esc_html__( 'xxx try this', '__TRIBE_DOMAIN__' ),
-				'tooltip'         => sprintf( esc_html__( 'Enter your custom URL, including "http://" or "https://", for example %s.', '__TRIBE_DOMAIN__' ), '<code>https://wpshindig.com/events/</code>' ),
+				'label'           => esc_html__( 'xxx try this', 'tribe-event-attendee-notifications' ),
+				'tooltip'         => sprintf( esc_html__( 'Enter your custom URL, including "http://" or "https://", for example %s.', 'tribe-event-attendee-notifications' ), '<code>https://wpshindig.com/events/</code>' ),
 				'validation_type' => 'html',
 			],
 		];
@@ -266,10 +266,10 @@ class Settings {
 	 * @return string
 	 */
 	private function get_example_intro_text() {
-		$result = '<h3>' . esc_html_x( 'Example Extension Setup', 'Settings header', '__TRIBE_DOMAIN__' ) . '</h3>';
+		$result = '<h3>' . esc_html_x( 'Example Extension Setup', 'Settings header', 'tribe-event-attendee-notifications' ) . '</h3>';
 		$result .= '<div style="margin-left: 20px;">';
 		$result .= '<p>';
-		$result .= esc_html_x( 'Some text here about this settings section.', 'Settings', '__TRIBE_DOMAIN__' );
+		$result .= esc_html_x( 'Some text here about this settings section.', 'Settings', 'tribe-event-attendee-notifications' );
 		$result .= '</p>';
 		$result .= '</div>';
 
